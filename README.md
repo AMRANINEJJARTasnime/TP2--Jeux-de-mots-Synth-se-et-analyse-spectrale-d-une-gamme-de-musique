@@ -78,3 +78,17 @@ synthétisée « Rien ne sert de partir à point, il faut courir ».
 new_phrase =[rien_ne_sert_de,partir_a_point,il_faut,courir];
 sound(new_phrase,f);
 ```
+
+## Synthèse et analyse spectrale d’une gamme de musique
+### Synthèse d’une gamme de musique 
+Les notes de musique produites par un piano peuvent être synthétisées 
+approximativement numériquement. En effet, chaque note peut être considérée 
+comme étant un son pur produit par un signal sinusoïdal. La fréquence de la note 
+« La » est par exemple de 440 Hz.
+
+1. Créez un programme qui permet de jouer une gamme de musique. La fréquence 
+de chaque note est précisée dans le tableau ci-dessous. Chaque note aura une durée 
+de 1s. La durée de la gamme sera donc de 8s. La fréquence d’échantillonnage fe sera 
+fixée à 8192 Hz.
+
+
