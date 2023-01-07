@@ -91,4 +91,45 @@ de chaque note est précisée dans le tableau ci-dessous. Chaque note aura une d
 de 1s. La durée de la gamme sera donc de 8s. La fréquence d’échantillonnage fe sera 
 fixée à 8192 Hz.
 
+<img width="364" alt="doremi" src="https://user-images.githubusercontent.com/121026580/211170608-c671a89c-f9ef-4c5f-8ef1-23834f1bddf9.png">
 
+``` matlab
+ fe=8192;
+ Ts=1/fe;
+ t=[0:Ts:1];
+ F_dol=262; 
+ F_re=294;
+ F_mi=330;
+ F_fa=349;
+ F_sol=392;
+ F_la=440;
+ F_si=494;
+ F_do2=523;
+
+ 
+ dol=sin(2*pi*F_dol*t); 
+ re=sin(2*pi*F_re*t);
+ mi=sin(2*pi*F_mi*t);
+ fa=sin(2*pi*F_fa*t);
+ so=sin(2*pi*F_sol*t);
+ la=sin(2*pi*F_la*t);
+ si=sin(2*pi*F_si*t);
+ do=sin(2*pi*F_do2*t);
+
+dolremifasolasido_dosilasofamiredol= [dol,re,mi,fa,so,la,si,do,do,si,la,so,fa,mi,re,dol];
+% dolremifasolasido= [dol,re,mi,fa,so,la,si,do];
+sound(dolremifasolasido_dosilasofamiredol,fe);
+```
+### Spectre de la gamme de musique
+2. Utilisez l’outil graphique d’analyse de signaux signalAnalyzer pour visualiser le 
+spectre de votre gamme. Observez les 8 fréquences contenues dans la gamme et 
+vérifiez leur valeur numérique à l’aide des curseurs.
+
+
+
+
+
+
+3. Tracez le spectrogramme qui permet de visualiser le contenu fréquentiel du signal 
+au cours du temps (comme le fait une partition de musique) mais la précision sur l’axe 
+des fréquences n’est pas suffisante pour relever précisément les 8 fréquences.
