@@ -125,11 +125,9 @@ sound(dolremifasolasido_dosilasofamiredol,fe);
 spectre de votre gamme. Observez les 8 fréquences contenues dans la gamme et 
 vérifiez leur valeur numérique à l’aide des curseurs.
 
-
-
-
-
+<img width="680" alt="2 par2 tp2 2" src="https://user-images.githubusercontent.com/121026580/211171384-3d52da99-5951-48c6-a4cd-e920e7965c7e.png">
 
 3. Tracez le spectrogramme qui permet de visualiser le contenu fréquentiel du signal 
 au cours du temps (comme le fait une partition de musique) mais la précision sur l’axe 
 des fréquences n’est pas suffisante pour relever précisément les 8 fréquences.
+<img width="677" alt="spectogramme" src="https://user-images.githubusercontent.com/121026580/211171403-e00f94a8-38b7-436a-8442-aa3588595c10.png">
