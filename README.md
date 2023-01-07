@@ -131,3 +131,25 @@ vérifiez leur valeur numérique à l’aide des curseurs.
 au cours du temps (comme le fait une partition de musique) mais la précision sur l’axe 
 des fréquences n’est pas suffisante pour relever précisément les 8 fréquences.
 <img width="677" alt="spectogramme" src="https://user-images.githubusercontent.com/121026580/211171403-e00f94a8-38b7-436a-8442-aa3588595c10.png">
+
+### Approximation du spectre d’un signal sinusoïdal à temps continu par FFT
+4. Le spectre d’un signal à temps continu peut être approché par transformée de 
+Fourier discrète (TFD) ou sa version rapide (Fast Fourier Transform (FFT). Afficher le 
+spectre de fréquence de la gamme musicale crée en échelle linéaire, puis avec une 
+échelle en décibels.
+
+<img width="190" alt="approx" src="https://user-images.githubusercontent.com/121026580/211173471-29dc1e1f-935c-4d15-a975-541a28b224b4.png">
+
+```matlab
+newSignal=abs(fft(dolremifasolasido));
+Sdb=mag2db(newSignal);
+subplot(2,1,1);
+fshift=(-length(dolremifasolasido)/2:length(dolremifasolasido)/2 -1 )*fe/length(dolremifasolasido);
+plot(fshift,fftshift(dolremifasolasido));
+title('spectre de fréquence en échelle linéaire');
+subplot(2,1,2);
+plot(fshift,fftshift(Sdb));
+title('spectre de fréquence en décibels.');
+```
+<img width="270" alt="last qst tp2" src="https://user-images.githubusercontent.com/121026580/211173854-16b79120-a9d7-4aee-a3f3-ba9be1e71716.png">
+
